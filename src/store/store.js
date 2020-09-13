@@ -17,7 +17,7 @@ function logger() {
 function handleError() {
   return next => action => {
     if (action.payload.code !== 200) {
-      message.error('请求错误')
+      // message.error('请求错误')
     }
     next(action)
   }
